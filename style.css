@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+/* COLOURS */
+
+/* 
+#030c40 - Dark Blue
+#01147b - Blue
+#0077da - Light Blue
+#006ef5 - Saturated Blue
+#f1f2f3 - Grey 
+#ffffff - White
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerBody {
+    max-width: 1600px;
+    margin: auto;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+a, 
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/* Navigation Bar */
+
+.navContainer {
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 70px;
+}
+.navContainer ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    list-style-type: none;
+    align-items: center;
+}
+.navContainer li {
+    width: 80px;
+    text-align: center;
+}
+.navContainer a, 
+.navContainer a:visited {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: #0e0e0e;
+    transition: 0.1s;
+}
+.navContainer a:hover {
+    color: #0077da;
+}
+.navContainer img {
+    transform: scale(0.5);
+}
+
+
+
+
+/* Disney Plus Banner */
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    background-color: #01147b;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.banner img {
+    transform: scale(0.8);
+}
+.banner h1 {
+    text-decoration: none;
+    font-weight: 100;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+
+
+/* Avengers Campus Banner */
+
+.containerCampus {
+    width: 1600px;
+    height: 680px;
+    overflow: hidden;
+}
+.containerCampusBG {
+    height: 100%;
+    background-image: url(images/eu_dlp_avengers-campus_hero_r_a7cbbbc3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease;
+}
+.containerCampusBG:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#overlayBtn {
+    position: absolute;
+    top: 250px;
+}
+#overlayTxt {
+    position: absolute;
+    top: 230px;
+}
+.overlayElements {
+    pointer-events: none;
+
+    top: 300px;
+    left: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+.overlayElements .image {
+    transform: scale(0.45);
+}
+.overlayElements button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: bold; 
+
+    cursor: pointer;
+    pointer-events: visible;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    margin: 10px 0;
+}
+.overlayElements button:hover {
+    background-color: #d1d1d1;
+}
+
+
+/* Information Boxes */ 
+
+.infoBoxContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    height: 625px;
+    
+    padding: 15px;
+    background-color: #f1f2f3;
+}
+.infoBox {
+    display: flex;
+    flex-direction: column;
+
+    height: 575px;
+    width: 340px; 
+
+    background-color: white; 
+
+    font-family: 'Nunito Sans', sans-serif;
+
+    transition: ease 0.2s;
+}
+.infoBox:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.144);
+}
+.infoText {
+    margin: 25px;
+}
+.infoText h2 {
+    font-size: 20px;
+    margin: 5px;
+}
+.infoText p {
+    font-size: 14px;
+    margin: 5px;
+}
+.infoText h3 {
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+}
+.infoBox .image {
+    object-fit: cover;
+    height: 375px;
+}
