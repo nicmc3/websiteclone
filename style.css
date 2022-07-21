@@ -205,6 +205,12 @@ a:visited {
 .infoText h3 {
     font-size: 14px;
     font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+.infoBox .positionText {
+    position: absolute;
+    margin-top: 10px;
 }
 .infoBox .image {
     object-fit: cover;
