@@ -216,3 +216,93 @@ a:visited {
     object-fit: cover;
     height: 375px;
 }
+
+
+/* Disney+ Showcase */
+.containerShowcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-top: 60px;
+
+    background-color: #030c40;
+    height: 950px;
+}
+.containerShowcase .termsText {
+    text-align: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+.containerShowcase h4 {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    color: white; 
+    margin-top: -100px;
+    padding: 15px;
+}
+.wrapperDisneyPlus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    height: 625px;
+    
+    padding: 15px;
+}
+.containerShowcase .positionText {
+    position: absolute;
+    margin-top: 10px;
+}
+.infoBoxBob {
+    display: flex;
+    flex-direction: column;
+
+    height: 575px;
+    width: 650px; 
+
+    background-color: white; 
+
+    font-family: 'Nunito Sans', sans-serif;
+
+    transition: ease 0.2s;
+}
+.infoBoxBob:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.144);
+}
+.infoBoxBob .image {
+    object-fit: cover;
+    height: 375px;
+}
+.infoBoxBob .positionText {
+    position: absolute;
+    margin-top: 50px;
+}
+.disneyBrands {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 50%;
+    align-self: center;
+}
+.subscribeButton {
+    align-self: center;
+
+    background-color: #006ef5;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.subscribeButton:hover {
+    cursor: pointer;
+    background-color: #0f67d3;
+}
