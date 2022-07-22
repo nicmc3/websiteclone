@@ -36,6 +36,8 @@ a:visited {
 
 
 
+
+
 /* Navigation Bar */
 
 .navContainer {
@@ -72,6 +74,7 @@ a:visited {
 
 
 
+
 /* Disney Plus Banner */
 
 .banner {
@@ -94,6 +97,7 @@ a:visited {
     font-size: 14px;
     color: #ffffff;
 }
+
 
 
 
@@ -161,6 +165,12 @@ a:visited {
 }
 
 
+
+
+
+
+
+
 /* Information Boxes */ 
 
 .infoBoxContainer {
@@ -216,6 +226,13 @@ a:visited {
     object-fit: cover;
     height: 375px;
 }
+
+
+
+
+
+
+
 
 
 /* Disney+ Showcase */
@@ -305,4 +322,106 @@ a:visited {
 .subscribeButton:hover {
     cursor: pointer;
     background-color: #0f67d3;
+}
+
+
+
+/* Disney Shop Showcase */
+
+.containerDisneyShop {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #f1f2f3;
+}
+.containerDisneyShop h4 {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+    color: rgb(19, 19, 19);
+
+    margin-top: 50px;
+}
+.containerDisneyBoxes {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+
+    gap: 20px;
+    padding: 50px;
+}
+.galleryImageTop {
+    width: 1350px;
+    height: 450px;
+    overflow: hidden;
+    z-index: 0;
+}
+.galleryImageSides {
+    width: 675px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 0;
+}
+.galleryImageBG1 {
+    height: 100%;
+    background-image: url(images/eu_shop-generic_short-hero_r_v3_e7c5208c.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease;
+}
+.galleryImageBG2 {
+    height: 100%;
+    background-image: url(images/eu_shop_baymax-christmas-feature_wi_r_6bee05c1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease;
+}
+.galleryImageBG3 {
+    height: 100%;
+    background-image: url(images/eu_shop_lightyear_wi_v4_r_bde815ed.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease;
+}
+.galleryImageBG1:hover,
+.galleryImageBG2:hover,
+.galleryImageBG3:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.overlayElementsShop {
+    display: flex; 
+    flex-direction: column; 
+    text-align: right;
+    margin-right: 20px;
+}
+.overlayElementsShop img {
+    margin-right: -100px;
+    transform: scale(0.5);
+}
+.image1 {
+    position: absolute;
+    right: 300px;
+    margin-top: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+}
+#overlayAnchor {
+    margin-right: 50px;
+    font-weight: bold;
+}
+#overlayAnchor:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#overlayTxtShop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    width: 450px;
 }
