@@ -340,7 +340,8 @@ a:visited {
     font-size: 28px;
     color: #131313;
 
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 .containerDisneyBoxes {
     display: inline-flex;
@@ -459,4 +460,32 @@ a:visited {
 } .image3 .overlayAnchor {
     font-weight: bold;
     text-align: right;
+}
+
+
+
+.infoBoxParks {
+    display: flex;
+    flex-direction: column;
+
+    height: 525px;
+    width: 700px; 
+
+    background-color: white; 
+
+    font-family: 'Nunito Sans', sans-serif;
+
+    transition: ease 0.2s;
+} .infoBoxParks:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.144);
+} .infoBoxParks .image {
+    object-fit: cover;
+    height: 375px;
+} .infoBoxParks p {
+    margin-bottom: -25px;
+} .infoBoxParks h3 {
+    margin-left: 5px;
+    font-weight: bolder;
+    font-size: 12px;
 }
