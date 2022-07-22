@@ -338,7 +338,7 @@ a:visited {
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 28px;
-    color: rgb(19, 19, 19);
+    color: #131313;
 
     margin-top: 50px;
 }
@@ -408,20 +408,55 @@ a:visited {
     margin-top: 100px;
     font-family: 'Nunito Sans', sans-serif;
     color: white;
-}
-#overlayAnchor {
+} .image1 .overlayAnchor {
     margin-right: 50px;
     font-weight: bold;
-}
-#overlayAnchor:hover {
+} .overlayAnchor:hover {
     cursor: pointer;
     text-decoration: underline;
-}
-#overlayTxtShop {
+} .image1 .overlayTxtShop {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-bottom: 10px;
     width: 450px;
+}
+.image2 {
+    position: absolute;
+    right: 1400px;
+    margin-top: 600px;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: left;
+} .image2 h3 {
+    pointer-events: none;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 5px;
+} .image2 .overlayTxtShop {
+    margin-bottom: 10px;
+    text-align: left;
+} .image2 .overlayAnchor {
+    font-weight: bold;
+    text-align: left;
+}
+.image3 {
+    position: absolute;
+    left: 1400px;
+    margin-top: 600px;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: right;
+} .image3 h3 {
+    pointer-events: none;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 5px;
+} .image3 .overlayTxtShop {
+    margin-bottom: 10px;
+    text-align: right;
+} .image3 .overlayAnchor {
+    font-weight: bold;
+    text-align: right;
 }
